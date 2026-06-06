@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  padding: 40px;
+}
+
+/* BOX CHÍNH */
+.container {
+  max-width: 900px;
+  margin: auto;
+
+  border: 2px solid #5f7cff;
+
+  padding: 25px;
+
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.top h1 {
+  font-size: 50px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.add-btn {
+  background: #7c3aed;
+  color: white;
+
+  border: none;
+
+  padding: 15px 30px;
+
+  border-radius: 15px;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+}
+
+/* TASK CARD */
+.task-card {
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 25px;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.task-info {
+  display: flex;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.task-title small,
+.priority small {
+  color: gray;
+
+  font-size: 14px;
+}
+
+.task-title h3 {
+  margin-top: 5px;
+
+  font-weight: 500;
+}
+
+.priority p {
+  margin-top: 5px;
+
+  font-weight: 600;
+}
+
+/* MÀU */
+.high {
+  color: #ef4444;
+}
+
+.medium {
+  color: #f59e0b;
+}
+
+.low {
+  color: #22c55e;
+}
+
+/* STATUS */
+.status {
+  background: #eeeeee;
+
+  padding: 8px 18px;
+
+  border-radius: 10px;
+
+  color: #777;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ACTION */
+.actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  font-size: 24px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+
+  border: 3px solid #7c3aed;
+
+  border-radius: 50%;
+}
+
+.edit {
+  color: black;
+
+  cursor: pointer;
+}
+
+.delete {
+  color: #ef4444;
+
+  cursor: pointer;
+}
+
+/* FORM */
+.form-box {
+  max-width: 900px;
+
+  margin: 30px auto;
+
+  border: 2px solid #5f7cff;
+
+  padding: 25px;
+
+  background: #f7f7f7;
+
+  position: relative;
+}
+
+.form-box h2 {
+  margin-bottom: 30px;
+}
+
+.close {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+  padding: 5px 10px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-weight: 500;
+
+  color: #666;
+}
+
+input {
+  width: 100%;
+
+  padding: 15px;
+
+  border: 2px solid #ddd;
+
+  border-radius: 15px;
+
+  outline: none;
+
+  font-size: 16px;
+}
+
+/* BUTTON PRIORITY */
+.priority-buttons {
+  display: flex;
+
+  gap: 15px;
+}
+
+.priority-buttons button {
+  padding: 10px 25px;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  /* background: white; */
+}
+
+.btn-high {
+  border: 2px solid #ef4444;
+
+  color: #ef4444;
+}
+
+.btn-medium {
+  border: 2px solid #f59e0b;
+
+  color: #f59e0b;
+}
+
+.btn-low {
+  border: none;
+
+  background-color: #22c55e;
+
+  color: white;
+}
+
+/* BUTTON ADD */
+.form-footer {
+  text-align: right;
+}
+
+.submit-btn {
+  border: none;
+
+  background: #9ca3af;
+
+  color: white;
+
+  padding: 10px 25px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+/* ẨN FORM MẶC ĐỊNH */
+.form-box {
+  display: none;
+}
+
+/* HIỆN FORM */
+.form-box.show {
+  display: block;
+}
